@@ -1,0 +1,36 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+<ul class="list">
+    <li class="item">
+    <div on-tap="showMap()">
+
+    <span class="part">
+        <h2> Imaginary trashcan</h2>
+
+        <h3 style="margin-top: 5%;margin-left: 2%;">Capacity : {{ filled }} %</h3>
+
+     </span>  
+     <span class="part">
+       <div class="icon-trash" >
+          
+          <div class="trash-lid" style="background-color: #2CC3B5"></div>
+          <div class="trash-container" style="background-color: #2CC3B5" ></div>
+            <div class="trash-line-1">
+              <div class="trash-line-unfill" ng-style="{'height': unfilled }"></div>
+            </div>
+            
+            <div class="trash-line-2">
+              <div class="trash-line-unfill" ng-style="{'height': unfilled }"></div>
+            </div>
+            <div class="trash-line-3">
+              <div class="trash-line-unfill" ng-style="{'height': unfilled }"></div>
+            </div>
+          </div>
+          </span>    
+        </div>
+
+    </li>
+    <button ng-click="click()">Click</button>
+</ul>
+  </ion-content>
+</ion-view>

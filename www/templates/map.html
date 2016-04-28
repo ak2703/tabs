@@ -1,0 +1,8 @@
+<div map-lazy-load="https://maps.google.com/maps/api/js" id="map">
+ <ng-map  map-type-control-options="{style:'HORIZONTAL_BAR', position:'BOTTOM_CENTER'}" style="width:100%;height:100%;" zoom="15" center="[22.8248742,75.8492073]" >
+    <marker ng-repeat="p in vm.positions"
+      position="{{p.pos}}" title="pos: {{p.pos}}"></marker>
+  </ng-map>
+  </div>
+
+ 
